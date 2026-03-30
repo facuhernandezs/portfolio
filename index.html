@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facundo | Data Analyst & Product Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="logo">Facundo.</div>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#portfolio">Caso de Estudio</a></li>
+            <li><a href="#contact" class="btn-primary-small">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy Facundo.</h1>
+            <h2>Analista de Datos orientado a Producto.</h2>
+            <p>Transformo datos complejos en decisiones de negocio estratégicas. Mi objetivo: construir grandes productos respaldados por evidencia.</p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn-primary">Ver Proyecto Destacado</a>
+                <a href="#contact" class="btn-secondary">Hablemos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3 class="section-title">Sobre mí</h3>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Soy un <strong>Data Analyst certificado por Google</strong> con experiencia práctica impulsando decisiones basadas en datos (ej. <em>Jarana, 2024</em>). Actualmente, curso la Licenciatura en Física en la UBA, lo que ha forjado en mí una capacidad analítica profunda y una pasión innegable por resolver problemas de alta complejidad.</p>
+                    <p>Mi objetivo profesional es transicionar hacia el rol de <strong>Product Manager (PM)</strong>. Creo firmemente que los mejores productos nacen de la intersección entre la intuición del usuario, la estrategia de negocio y la validación rigurosa a través de los datos.</p>
+                </div>
+                <div class="skills">
+                    <h4>Stack Tecnológico & Herramientas</h4>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-database"></i> SQLite</li>
+                        <li><i class="fas fa-chart-bar"></i> Power BI</li>
+                        <li><i class="fas fa-server"></i> Supabase</li>
+                        <li><i class="fab fa-jupyter"></i> Jupyter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caso de Estudio (Portfolio) -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h3 class="section-title">Proyecto Destacado</h3>
+            
+            <div class="case-study">
+                <div class="case-header">
+                    <span class="tag">Retail Analytics</span>
+                    <span class="tag">Product Strategy</span>
+                    <h4>Optimización de Rentabilidad: Repensando la Estrategia de Descuentos</h4>
+                </div>
+                
+                <div class="case-body">
+                    <div class="case-block">
+                        <h5><i class="fas fa-exclamation-triangle"></i> El Problema</h5>
+                        <p>En la industria del retail, la dependencia de descuentos masivos para impulsar el volumen de ventas es una práctica común, pero peligrosa. El desafío central de este proyecto fue identificar qué categorías de productos estaban sufriendo una <strong>erosión severa de márgenes (canibalización)</strong> debido a promociones ineficientes que no justificaban el costo de adquisición.</p>
+                    </div>
+
+                    <div class="case-block">
+                        <h5><i class="fas fa-search-chart"></i> Análisis</h5>
+                        <p>Utilizando un histórico de transacciones, realicé un análisis cruzando el porcentaje de descuento (<code>discount_percent</code>) con el beneficio neto (<code>profit</code>) segmentado por categoría (<code>product_category</code>). Los datos revelaron un patrón claro: categorías de compra recurrente o "necesidad" (ej. Electrónica) mantenían un volumen de ventas (<code>quantity_sold</code>) estable incluso con descuentos nulos o bajos (0-10%). Por el contrario, descuentos agresivos (>30%) en categorías como Moda destruían el margen neto sin generar un incremento elástico proporcional en la demanda.</p>
+                    </div>
+
+                    <div class="case-block">
+                        <h5><i class="fas fa-lightbulb"></i> Decisión & Estrategia</h5>
+                        <p>Como iniciativa de producto, la decisión táctica propuesta fue reestructurar la política promocional. Se definió un límite (cap) de descuento del 15% para categorías inelásticas de alta retención. El margen bruto salvado por esta medida se reasignó estratégicamente hacia campañas de fidelización (Loyalty Programs) orientadas a aumentar el Life Time Value (LTV) de los usuarios recurrentes.</p>
+                    </div>
+
+                    <div class="case-block highlight">
+                        <h5><i class="fas fa-rocket"></i> Recomendación & Siguientes Pasos (PM)</h5>
+                        <p>Para asegurar el éxito de la estrategia, recomendé las siguientes acciones medibles:</p>
+                        <ul>
+                            <li><strong>Monitoreo en Tiempo Real:</strong> Despliegue de un dashboard en Power BI centrado en el ratio <em>Descuento otorgado / Beneficio neto</em>.</li>
+                            <li><strong>Validación (Test A/B):</strong> Ejecutar un experimento controlado durante el próximo trimestre (Q) aplicando la nueva política solo al 20% de la base de usuarios para medir el impacto estadístico en el Revenue global antes de un roll-out completo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto (Opción A) -->
+    <section id="contact" class="contact">
+        <div class="container text-center">
+            <h3 class="section-title">¿Trabajamos juntos?</h3>
+            <p>Si buscas un perfil analítico, orientado a resultados y listo para aportar valor desde el día uno en tu equipo de Producto, hablemos.</p>
+            
+            <div class="contact-actions">
+                <a href="facundoHernandez.pdf" target="_blank" class="btn-primary large"><i class="fas fa-download"></i> Descargar mi CV</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="mailto:facundo123hernandez@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i> facundo123hernandez@gmail.com</a>
+                <a href="https://www.linkedin.com/in/facundo-hernandez-177916265" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/facuhernandezs" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Facundo. Construido con foco en la experiencia.</p>
+    </footer>
+
+</body>
+</html>
