@@ -384,3 +384,4 @@ footer p {
     .nav-links { display: none; } /* En un proyecto real añadiríamos menú hamburguesa */
     .case-header h4 { font-size: 1.5rem; }
 }
+.dashboard-container { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #eaeaea; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; }
