@@ -1,240 +1,287 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facundo | Data Analyst & Product Manager</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facundo Hernandez | Data Analyst & PM Aspirant</title>
+  <meta name="description" content="Portfolio profesional de Facundo Hernandez: analisis de datos, estrategia de producto y proyectos de impacto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-    <!-- Navegación -->
-    <nav>
-        <div class="logo" style="display: flex; align-items: center; gap: 15px;">
-            Facundo.
-            <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema" style="color: inherit; display: flex; align-items: center; font-size: 1.2rem;"><i class="fas fa-moon"></i></button>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#portfolio">Caso de Estudio</a></li>
-            <li><a href="#contact" class="btn-primary-small">Contacto</a></li>
-        </ul>
+  <header class="site-header">
+    <nav class="floating-nav" aria-label="Navegacion principal">
+      <a class="brand" href="#inicio" aria-label="Inicio Facundo Hernandez">
+        <span class="brand-mark">FH</span>
+        <span class="brand-text">Facundo Hernandez</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul id="menu-principal" class="nav-links">
+        <li><a href="#sobre-mi">Sobre mi</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#caso">Caso de estudio</a></li>
+        <li><a class="cta-link" href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hola, soy Facundo.</h1>
-            <h2>Analista de Datos orientado a Producto.</h2>
-            <p>Transformo datos complejos en decisiones de negocio estratégicas. Mi objetivo: construir grandes productos respaldados por evidencia.</p>
-            <div class="hero-cta">
-                <a href="#portfolio" class="btn-primary">Ver Proyecto Destacado</a>
-                <a href="#contact" class="btn-secondary">Hablemos</a>
-            </div>
-        </div>
-    </header>
+  <main id="contenido">
+    <section id="inicio" class="hero section">
+      <div class="aurora aurora-a" aria-hidden="true"></div>
+      <div class="aurora aurora-b" aria-hidden="true"></div>
 
-    <!-- Sobre Mí -->
-    <section id="about" class="about">
-        <div class="container">
-            <h3 class="section-title">Sobre mí</h3>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Soy un <strong>Data Analyst certificado por Google</strong> con experiencia práctica impulsando decisiones basadas en datos (ej. <em>Jarana, de diciembre de 2024 a noviembre de 2025. Analizando las ventas y optimizando los costos</em>). Actualmente, soy estudiante de la Licenciatura en Física en la UBA enfrentándome diariamente a nuevos desafíos analíticos.</p>
-                    <p>Mi objetivo profesional es transicionar hacia el rol de <strong>Product Manager (PM)</strong>. Creo firmemente que los mejores productos nacen de la intersección entre la intuición del usuario, la estrategia de negocio y la validación rigurosa a través de los datos.</p>
-                </div>
-                <div class="skills">
-                    <h4>Stack Tecnológico & Herramientas</h4>
-                    <ul class="skill-list">
-                        <li><i class="fab fa-python"></i> Python</li>
-                        <li><i class="fas fa-database"></i> SQLite</li>
-                        <li><i class="fas fa-chart-bar"></i> Power BI</li>
-                        <li><i class="fas fa-server"></i> Supabase</li>
-                        <li><i class="fab fa-jupyter"></i> Jupyter</li>
-                        <li><i class="fas fa-table" style="color: #0F9D58;"></i> Google Sheets</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Data-Driven Product Management</p>
+          <h1>Convierto datos en decisiones de producto con impacto real.</h1>
+          <p class="lead">
+            Soy Facundo, Data Analyst certificado por Google y estudiante de Fisica (UBA).
+            Mi objetivo es crecer como Product Manager, combinando analitica, discovery y estrategia.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#caso">Ver proyecto destacado</a>
+            <a class="btn btn-secondary" href="facundoHernandez.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+          </div>
+
+          <ul class="signal-list" aria-label="Indicadores profesionales">
+            <li>
+              <strong>2024</strong>
+              <span>Impacto en Jarana</span>
+            </li>
+            <li>
+              <strong>2025 - Hoy</strong>
+              <span>Product & Data OSS</span>
+            </li>
+            <li>
+              <strong>Google</strong>
+              <span>Data Analytics Cert.</span>
+            </li>
+          </ul>
         </div>
+
+        <aside class="hero-panel reveal" aria-label="Perfil profesional">
+          <h2>Focus actual</h2>
+          <p>
+            Busco aportar en equipos de producto donde se valore el pensamiento analitico,
+            la experimentacion y la comunicacion clara entre negocio y tecnologia.
+          </p>
+
+          <dl class="focus-list">
+            <div>
+              <dt>Producto</dt>
+              <dd>Discovery, priorizacion RICE, roadmap</dd>
+            </div>
+            <div>
+              <dt>Analitica</dt>
+              <dd>Python, SQL, Power BI, modelado de metricas</dd>
+            </div>
+            <div>
+              <dt>Operacion</dt>
+              <dd>Supabase, SQLite, Jupyter, GitHub</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
     </section>
 
-    <!-- Caso de Estudio (Portfolio) -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h3 class="section-title">Proyecto Destacado</h3>
-            
-            <div class="case-study">
-                <div class="case-header">
-                    <span class="tag">Retail Analytics</span>
-                    <span class="tag">Product Strategy</span>
-                    <h4>Optimización de Rentabilidad: Repensando la Estrategia de Descuentos</h4>
-                </div>
-                
-                <div class="case-body">
-                    <div class="case-block">
-                        <h5><i class="fas fa-exclamation-triangle"></i> El Problema</h5>
-                        <p>En la industria del retail, la dependencia de descuentos masivos para impulsar el volumen de ventas es una práctica común, pero peligrosa. El desafío central de este proyecto fue identificar qué categorías de productos estaban sufriendo una <strong>erosión severa de márgenes (canibalización)</strong> debido a promociones ineficientes que no justificaban el costo de adquisición.</p>
-                    </div>
+    <section id="sobre-mi" class="section section-muted">
+      <div class="container">
+        <p class="section-kicker reveal">Perfil</p>
+        <h2 class="section-title reveal">Sobre mi</h2>
 
-                    <div class="case-block">
-                        <h5><i class="fas fa-search-chart"></i> Análisis</h5>
-                        <p>Utilizando un histórico de transacciones, realicé un análisis cruzando el porcentaje de descuento (<code>discount_percent</code>) con el beneficio neto (<code>profit</code>) segmentado por categoría (<code>product_category</code>). Los datos revelaron un patrón claro: categorías de compra recurrente o "necesidad" (ej. Electrónica) mantenían un volumen de ventas (<code>quantity_sold</code>) estable incluso con descuentos nulos o bajos (0-10%). Por el contrario, descuentos agresivos (>30%) en categorías como Moda destruían el margen neto sin generar un incremento elástico proporcional en la demanda.</p>
-                    </div>
+        <div class="about-grid">
+          <article class="card reveal">
+            <h3>Vision profesional</h3>
+            <p>
+              Me apasiona desarmar problemas complejos y traducir datos en decisiones accionables.
+              Trabajo con una mentalidad de producto: entender contexto, validar hipotesis y priorizar impacto.
+            </p>
+          </article>
 
-                    <div class="case-block">
-                        <h5><i class="fas fa-lightbulb"></i> Decisión & Estrategia</h5>
-                        <p>Como iniciativa de producto, la decisión táctica propuesta fue reestructurar la política promocional. Se definió un límite (cap) de descuento del 15% para categorías inelásticas de alta retención. El margen bruto salvado por esta medida se reasignó estratégicamente hacia campañas de fidelización (Loyalty Programs) orientadas a aumentar el Life Time Value (LTV) de los usuarios recurrentes.</p>
-                    </div>
+          <article class="card reveal">
+            <h3>Formacion y contexto</h3>
+            <p>
+              Actualmente curso la Licenciatura en Fisica en la UBA, lo que fortalece mi pensamiento
+              analitico y estructurado. Vivo en Palermo, Capital Federal.
+            </p>
+          </article>
 
-                    <div class="case-block">
-                        <h5><i class="fas fa-chart-line"></i> Dashboard de Monitoreo</h5>
-                        <p>Implementación visual para el seguimiento en tiempo real del impacto de los descuentos sobre el margen neto por categoría.</p>
-                        <div class="dashboard-container">
-                            <canvas id="profitDiscountChart"></canvas>
-                        </div>
-                    </div>
-
-                    <div class="case-block highlight">
-                        <h5><i class="fas fa-rocket"></i> Recomendación & Siguientes Pasos (PM)</h5>
-                        <p>Para asegurar el éxito de la estrategia, se definió la siguiente acción medible:</p>
-                        <ul>
-                            <li><strong>Validación (Test A/B):</strong> Ejecutar un experimento controlado durante el próximo trimestre (Q) aplicando la nueva política solo al 20% de la base de usuarios para medir el impacto estadístico en el Revenue global antes de un roll-out completo.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          <article class="card reveal">
+            <h3>Como trabajo</h3>
+            <p>
+              Defino objetivos medibles, construyo tableros para seguimiento y llevo hallazgos tecnicos
+              a lenguaje de negocio para facilitar decisiones rapidas.
+            </p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Contacto (Opción A) -->
-    <section id="contact" class="contact">
-        <div class="container text-center">
-            <h3 class="section-title">¿Trabajamos juntos?</h3>
-            <p>Si buscas un perfil analítico, orientado a resultados y listo para aportar valor desde el día uno en tu equipo de Producto, hablemos.</p>
-            
-            <div class="contact-actions">
-                <a href="facundoHernandez.pdf" target="_blank" class="btn-primary large"><i class="fas fa-download"></i> Descargar mi CV</a>
+    <section id="experiencia" class="section">
+      <div class="container">
+        <p class="section-kicker reveal">Trayectoria</p>
+        <h2 class="section-title reveal">Experiencia de impacto</h2>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span>2024</span>
+              <h3>Data Analyst - Jarana</h3>
             </div>
-            
-            <div class="social-links">
-                <a href="mailto:facundo123hernandez@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i> facundo123hernandez@gmail.com</a>
-                <a href="https://wa.me/5492964473244" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.2rem;"></i> WhatsApp</a>
-                <a href="https://www.linkedin.com/in/facundo-hernandez-177916265" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/facuhernandezs" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+            <ul>
+              <li>Automatice reportes de BI en Power BI para mejorar la velocidad de decision comercial.</li>
+              <li>Con Python transforme metricas tecnicas en insights accionables para crecimiento.</li>
+              <li>Propuse seguimiento de margen y descuento por categoria para reducir canibalizacion.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span>2025 - Presente</span>
+              <h3>Product & Data Projects - Open Source</h3>
             </div>
+            <ul>
+              <li>Defino PRDs, flujos de usuario y roadmap iniciales para proyectos en GitHub.</li>
+              <li>Implemento bases de datos en Supabase/SQLite y analisis en notebooks Jupyter.</li>
+              <li>Integro herramientas de IA en ciclos de desarrollo para acelerar iteraciones.</li>
+            </ul>
+          </article>
         </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Facundo. Construido con foco en la experiencia.</p>
-    </footer>
+    <section id="caso" class="section section-muted">
+      <div class="container">
+        <p class="section-kicker reveal">Caso destacado</p>
+        <h2 class="section-title reveal">Optimizacion de rentabilidad en retail</h2>
 
+        <article class="case-study reveal">
+          <header>
+            <span class="chip">Retail Analytics</span>
+            <span class="chip">Product Strategy</span>
+            <h3>Replanteo de descuentos para proteger margen sin perder volumen</h3>
+          </header>
+
+          <div class="case-grid">
+            <div>
+              <h4>Problema</h4>
+              <p>
+                Detectamos dependencia de promociones agresivas que subian ventas de corto plazo,
+                pero erosionaban margen neto en categorias inelasticas.
+              </p>
+
+              <h4>Analisis</h4>
+              <p>
+                Cruce de <code>discount_percent</code>, <code>profit</code> y <code>quantity_sold</code> por
+                <code>product_category</code> usando historico transaccional. Hallazgo: electronica mantenia
+                demanda con descuentos bajos, mientras moda destruia rentabilidad con descuentos altos.
+              </p>
+
+              <h4>Decision</h4>
+              <p>
+                Se propuso cap del 15% para categorias inelasticas y reinversion del margen recuperado
+                en fidelizacion para elevar LTV.
+              </p>
+            </div>
+
+            <div class="mini-chart" aria-label="Comparacion de margen por nivel de descuento" role="img">
+              <h4>Indicador visual de impacto</h4>
+
+              <div class="bar-row">
+                <span>Electronica 0-10%</span>
+                <div class="bar-track"><div class="bar-fill positive" data-width="88"></div></div>
+                <strong>+15k</strong>
+              </div>
+
+              <div class="bar-row">
+                <span>Electronica +30%</span>
+                <div class="bar-track"><div class="bar-fill caution" data-width="68"></div></div>
+                <strong>+12k</strong>
+              </div>
+
+              <div class="bar-row">
+                <span>Moda 0-10%</span>
+                <div class="bar-track"><div class="bar-fill caution" data-width="44"></div></div>
+                <strong>+8k</strong>
+              </div>
+
+              <div class="bar-row">
+                <span>Moda +30%</span>
+                <div class="bar-track"><div class="bar-fill negative" data-width="10"></div></div>
+                <strong>-2k</strong>
+              </div>
+
+              <p class="chart-note">Siguiente paso: test A/B trimestral sobre 20% de usuarios antes de rollout completo.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-kicker reveal">Stack</p>
+        <h2 class="section-title reveal">Herramientas y capacidades</h2>
+
+        <div class="tool-grid">
+          <article class="tool-card reveal">
+            <h3>Analisis</h3>
+            <p>Python, SQL, SQLite, Jupyter</p>
+          </article>
+          <article class="tool-card reveal">
+            <h3>Business Intelligence</h3>
+            <p>Power BI, Google Sheets, storytelling de metricas</p>
+          </article>
+          <article class="tool-card reveal">
+            <h3>Producto</h3>
+            <p>Discovery, RICE, roadmap, experimentacion</p>
+          </article>
+          <article class="tool-card reveal">
+            <h3>Implementacion</h3>
+            <p>Supabase, GitHub, colaboracion con IA aplicada</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-muted">
+      <div class="container contact-block reveal">
+        <p class="section-kicker">Contacto</p>
+        <h2 class="section-title">Construyamos producto con evidencia</h2>
+        <p class="contact-copy">
+          Si buscas un perfil analitico, con foco en negocio y ganas de crecer en PM,
+          conversemos. Estoy disponible para roles junior y proyectos colaborativos.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:facundo123hernandez@gmail.com">Enviar email</a>
+          <a class="btn btn-secondary" href="facundoHernandez.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+        </div>
+
+        <ul class="contact-links" aria-label="Enlaces de contacto">
+          <li><a href="https://www.linkedin.com/in/facundo-hernandez-177916265" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/facuhernandezs" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://wa.me/5492964473244" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Facundo Hernandez. Portfolio profesional.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-<script>
-    const ctx = document.getElementById('profitDiscountChart').getContext('2d');
-    
-    // Configuración para que el gráfico luzca moderno
-    Chart.defaults.font.family = "'Inter', sans-serif";
-    Chart.defaults.color = '#666';
-
-    const profitDiscountChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Electrónica (Bajo Desc)', 'Electrónica (Alto Desc)', 'Moda (Bajo Desc)', 'Moda (Alto Desc)'],
-            datasets: [
-                {
-                    label: 'Volumen de Ventas (Unidades)',
-                    data: [850, 890, 420, 950],
-                    backgroundColor: '#3498db',
-                    borderRadius: 4,
-                    yAxisID: 'y'
-                },
-                {
-                    label: 'Margen Neto ($ USD)',
-                    data: [15000, 12000, 8000, -2000],
-                    backgroundColor: function(context) {
-                        const index = context.dataIndex;
-                        const value = context.dataset.data[index];
-                        return value < 0 ? '#e74c3c' : '#2ecc71';
-                    },
-                    borderRadius: 4,
-                    yAxisID: 'y1'
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            interaction: {
-                mode: 'index',
-                intersect: false,
-            },
-            plugins: {
-                tooltip: {
-                    backgroundColor: 'rgba(44, 62, 80, 0.9)',
-                    titleFont: { size: 14, weight: '600' },
-                    bodyFont: { size: 13 },
-                    padding: 12,
-                    cornerRadius: 8,
-                },
-                legend: {
-                    position: 'top',
-                    labels: {
-                        usePointStyle: true,
-                        padding: 20
-                    }
-                }
-            },
-            scales: {
-                y: {
-                    type: 'linear',
-                    display: true,
-                    position: 'left',
-                    title: { display: true, text: 'Volumen de Ventas', font: { weight: '600' } },
-                    grid: { color: '#f1f1f1' }
-                },
-                y1: {
-                    type: 'linear',
-                    display: true,
-                    position: 'right',
-                    title: { display: true, text: 'Margen Neto ($)', font: { weight: '600' } },
-                    grid: { drawOnChartArea: false }
-                },
-                x: {
-                    grid: { display: false }
-                }
-            }
-        }
-    });
-
-    // Dark Mode Toggle Logic
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeIcon = themeToggleBtn.querySelector('i');
-    
-    // Check local storage for theme preference
-    if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-        Chart.defaults.color = '#b0b0b0';
-        profitDiscountChart.update();
-    }
-
-    themeToggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        
-        if (isDarkMode) {
-            localStorage.setItem('theme', 'dark');
-            themeIcon.classList.replace('fa-moon', 'fa-sun');
-            Chart.defaults.color = '#b0b0b0';
-        } else {
-            localStorage.setItem('theme', 'light');
-            themeIcon.classList.replace('fa-sun', 'fa-moon');
-            Chart.defaults.color = '#666';
-        }
-        profitDiscountChart.update();
-    });
-</script>
 </html>
